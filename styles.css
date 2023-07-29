@@ -1,0 +1,244 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f4;
+	position: relative;
+	overflow: hidden;
+}
+
+.container {
+	max-width: 400px;
+	margin: 20px auto;
+	margin-top: 60px;
+	padding: 20px 50px;
+	background-color: #fff;
+	border-radius: 5px;
+}
+.container2 {
+	max-width: 400px;
+	margin: 10px auto;
+	padding: 20px 50px;
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+.welcome {
+	margin-top: 50px;
+	padding: 0;
+	color: #afafaf;
+	font-size: 10px;
+}
+.heading {
+	margin: 10px 0px;
+	padding: 0;
+	font-size: larger;
+	font-weight: bold;
+}
+.profile {
+	font-size: larger;
+	font-weight: bold;
+}
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	font-size: 5px;
+	margin-top: 5px;
+}
+
+input {
+	margin-top: 10px;
+	margin-bottom: 15px;
+	padding: 10px 5px;
+	width: 97%;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+
+button {
+	background: linear-gradient(180deg, #625bf7 0%, #463eea 100%);
+	color: #fff;
+	border: none;
+	padding: 15px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+	font-weight: bold;
+}
+#logout {
+	width: 90%;
+	margin-bottom: 30px;
+}
+
+button:hover {
+	background: linear-gradient(180deg, #463eea 0%, #625bf7 100%);
+}
+#error {
+	text-align: center;
+	color: #625bf7;
+	font-weight: bold;
+}
+.message {
+	text-align: center;
+	font-size: larger;
+	margin-top: 30px;
+	color: #625bf7;
+	/* padding: 10px; */
+	/* border-radius: 5px; */
+	font-weight: bold;
+}
+
+.profile-info {
+	margin-top: 20px;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.message-card {
+	background: linear-gradient(180deg, #625bf7 0%, #463eea 100%);
+	color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.profile-logo {
+	max-width: 100px;
+	width: 40%;
+	margin-bottom: 10px;
+}
+
+.profile-card {
+	text-align: center;
+	border: none;
+}
+
+.logout-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+.login-link {
+	text-align: center;
+	font-size: small;
+}
+.alink {
+	text-decoration: none;
+	color: #625bf7;
+}
+body::before {
+	content: "";
+	position: absolute;
+	top: 270%;
+	left: 0;
+	width: 5px;
+	height: 500%;
+	background-color: #00ffff;
+	transform-origin: top left;
+	transform: translate(-50%, -50%) rotate(-70deg);
+	z-index: -1;
+}
+.green-container {
+	position: absolute;
+	top: 400%;
+	left: 0%;
+	width: 60%;
+	height: 500%;
+	background-color: #00ffff;
+	transform-origin: top left;
+	transform: translate(-50%, -50%) rotate(-70deg);
+	z-index: -1;
+}
+body.profile-page::before {
+	display: none;
+}
+
+@media (max-width: 600px) {
+	body::before {
+		top: 120%;
+		width: 3px;
+		height: 200%;
+		transform: translate(-50%, -50%) rotate(-55deg);
+	}
+
+	.green-container {
+		top: 325%; /* Adjust position for mobile */
+		width: 250%;
+		height: 200%; /* Adjust height for mobile */
+		transform: translate(-50%, -50%) rotate(-60deg);
+	}
+	body.profile-page::before {
+		display: none;
+	}
+}
+
+@media (max-width: 600px) {
+	.container {
+		margin: 10px auto; /* Adjust margin for mobile */
+		margin-top: 100px; /* Adjust margin-top for mobile */
+		padding: 5px 15px; /* Adjust padding for mobile */
+	}
+
+	.container2 {
+		margin: 5px auto; /* Adjust margin for mobile */
+		padding: 10px 20px; /* Adjust padding for mobile */
+	}
+
+	.welcome {
+		font-size: 14px; /* Adjust font-size for mobile */
+		margin-top: 30px; /* Adjust margin-top for mobile */
+	}
+
+	.heading {
+		font-size: 18px; /* Adjust font-size for mobile */
+	}
+
+	label {
+		font-size: 12px; /* Adjust font-size for mobile */
+		margin-top: 10px; /* Adjust margin-top for mobile */
+	}
+
+	input {
+		margin-top: 5px; /* Adjust margin-top for mobile */
+		margin-bottom: 10px; /* Adjust margin-bottom for mobile */
+		padding: 8px 5px; /* Adjust padding for mobile */
+		width: 90%; /* Set width to 100% for mobile */
+	}
+
+	button {
+		text-align: center;
+		padding: 15px 5px;
+		font-size: 16px;
+		width: 90%;
+	}
+
+	.message {
+		font-size: 20px; /* Adjust font-size for mobile */
+		margin-top: 20px; /* Adjust margin-top for mobile */
+	}
+
+	.profile-info {
+		padding: 8px; /* Adjust padding for mobile */
+	}
+
+	.message-card {
+		padding: 8px; /* Adjust padding for mobile */
+		margin-bottom: 10px; /* Adjust margin-bottom for mobile */
+	}
+
+	.logout-container {
+		margin-top: 10px; /* Adjust margin-top for mobile */
+	}
+	.profile-logo {
+		width: 80px;
+	}
+	#error {
+		display: none;
+	}
+	body.profile-page::before {
+		display: none;
+	}
+}
